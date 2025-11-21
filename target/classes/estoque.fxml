@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.EstoqueController">
+    <left><VBox spacing="10" style="-fx-padding:10; -fx-background-color:#F3F3F3;">
+        <Button text="Dashboard" onAction="#goDashboard"/>
+        <Button text="Estoque" onAction="#goEstoque"/>
+        <Button text="Vendas" onAction="#goVendas"/>
+        <Button text="Investimentos" onAction="#goInv"/>
+        <Button text="Relatórios" onAction="#goRel"/>
+    </VBox></left>
+    <center>
+        <VBox spacing="10" style="-fx-padding:10;">
+            <HBox spacing="5">
+                <TextField fx:id="nameField" promptText="Nome"/>
+                <TextField fx:id="typeField" promptText="Tipo"/>
+                <TextField fx:id="qtyField" promptText="Quantidade"/>
+                <TextField fx:id="costField" promptText="Custo"/>
+                <TextField fx:id="priceField" promptText="Preço"/>
+                <Button text="Adicionar" onAction="#addProduct"/>
+            </HBox>
+            <TableView fx:id="table"/>
+            <Button text="Excluir Selecionado" onAction="#deleteProduct"/>
+        </VBox>
+    </center>
+</BorderPane>

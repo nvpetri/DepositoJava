@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.DashboardController">
+    <left><VBox spacing="10" style="-fx-padding:10; -fx-background-color:#F3F3F3;">
+        <Button text="Dashboard" onAction="#goDashboard"/>
+        <Button text="Estoque" onAction="#goEstoque"/>
+        <Button text="Vendas" onAction="#goVendas"/>
+        <Button text="Investimentos" onAction="#goInv"/>
+        <Button text="Relatórios" onAction="#goRel"/>
+    </VBox></left>
+    <center><VBox alignment="CENTER" spacing="20">
+        <Label text="Resumo Geral" style="-fx-font-size:22;"/>
+        <Label fx:id="totalValue"/>
+        <Label fx:id="totalProducts"/>
+        <Label fx:id="totalSold"/>
+    </VBox></center>
+</BorderPane>

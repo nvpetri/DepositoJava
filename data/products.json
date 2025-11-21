@@ -1,0 +1,13 @@
+[ {
+  "name" : "Fio",
+  "type" : "Fio",
+  "quantity" : 5,
+  "cost" : 10.0,
+  "price" : 20.0
+}, {
+  "name" : "Fio",
+  "type" : "Fio",
+  "quantity" : 5,
+  "cost" : 10.0,
+  "price" : 20.0
+} ]
